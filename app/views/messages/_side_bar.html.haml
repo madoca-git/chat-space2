@@ -1,0 +1,33 @@
+-# ＜サイドバー＞
+.wrapper
+  .Side_bar
+    .Side_bar__top
+      .Side_bar__top__user
+        %p.Side_bar__top__user__name
+          NAME
+        %ul.Side_bar__top__user__icon
+          %li 
+          = link_to "#", class: "icon edit-icon" do
+            = icon('far', 'edit')
+          %li
+          = link_to "#", class: "icon setting-icon" do
+            = icon('fas', 'cog')
+    .Side_bar__list
+      .Side_bar__list__group
+        %p.Side_bar__list__group--name
+          GROUP_NAME
+        %p.Side_bar__list__group--message
+          messagemessagemessage
+        .Side_bar__group-list
+      .Side_bar__list__group
+        %p.Side_bar__list__group--name
+          GROUP_NAME
+        %p.Side_bar__list__group--message
+          messagemessagemessage
+        .Side_bar__group-list
+      .Side_bar__list__group
+        %p.Side_bar__list__group--name
+          GROUP_NAME
+        %p.Side_bar__list__group--message
+          messagemessagemessage
+        .Side_bar__group-list

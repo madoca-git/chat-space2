@@ -1,0 +1,47 @@
+-# ＜チャット画面＞
+.wrapper
+  .Main_chat
+    .Main_chat__group-info
+      .Main_chat__group-info--left
+        %p.title
+          test
+        %p.member
+          Member：name
+      .Main_chat__group-info--right
+        %p
+        = link_to "Edit", "#", class: "edit-btn"
+    .Main_chat__lists
+      .Main_chat__lists__log
+        .name-date
+          %p.name
+            NAME
+          %p.date
+            2020年07月06日 10時16分
+        %p.message
+          messagemessagemessage
+      .Main_chat__lists__log
+        .name-date
+          %p.name
+            NAME
+          %p.date
+            2020年07月06日 10時16分
+        %p.message
+          messagemessagemessage
+      .Main_chat__lists__log
+        .name-date
+          %p.name
+            NAME
+          %p.date
+            2020年07月06日 10時16分
+        %p.message
+          messagemessagemessage
+    .Main_chat__form
+      .form
+        = form_with do |f|
+          .form__new-message  
+            .form__new-message__input-box
+              = f.text_field :text, class: "input-text", placeholder: "type a message"
+              %label{class: "input-image"}
+                = icon('far', 'image', class: "file-icon")
+                = f.file_field :image, class: "input-image"
+            = f.submit "Send", class: "input-btn"
