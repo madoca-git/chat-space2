@@ -49,6 +49,9 @@
     &__list {
       background-color: #2f3e51;
       height: calc(100% - 100px);
+      .edit-link {
+        text-decoration: none;
+      }
       &__group {
         height: 95px;
         padding: 20px 20px 40px;
@@ -77,14 +80,22 @@
       &--left {
         height: 100px;
         .title {
+          display: flex;
           font-size: 20px;
           color: #333333;
           margin-top: 35px;
         }
-        .member {
-            font-size: 12px;
-            color: #999999;
-            margin-top: 15px;
+        .members {
+          display: flex;
+          font-size: 12px;
+          color: #999999;
+          margin-top: 15px;
+          .member {
+            display: flex;
+            .member-name {
+              padding-right: 5px;
+            }
+          }
         }
       }
       &--right {
@@ -130,7 +141,6 @@
       height: 90px;
       width: calc(100vw - 300px);
       padding: 20px 40px;
-
       .form {
         &__new-message {
           display: flex;

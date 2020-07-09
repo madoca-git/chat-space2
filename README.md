@@ -40,7 +40,7 @@ Things you may want to cover:
 |password|string|null: false|
 ### Association
 - has_many :group, through: :group_users
-- has_many :posts
+- has_many :messages
 - has_many :groups_users
 
 ## groupsテーブル
@@ -49,11 +49,11 @@ Things you may want to cover:
 |name|string|null: false|
 |password|string|null: false|
 ### Association
-- has_many :posts
+- has_many :messages
 - has_many :users, through: :group_users
 - has_many :group_users
 
-## postsテーブル
+## messagesテーブル
 |Column|Type|Options|
 |------|----|-------|
 |text|text||
