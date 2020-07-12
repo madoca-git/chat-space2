@@ -13,6 +13,7 @@ module ChatSpace2
       g.helper false
       g.test_framework false
       config.i18n.default_locale = :ja
+      config.time_zone = 'Tokyo'
     end
     
     config.action_view.field_error_proc = Proc.new do |html_tag, instance| 

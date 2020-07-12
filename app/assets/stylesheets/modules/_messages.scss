@@ -116,6 +116,7 @@
       height: calc(100vh - 190px);
       width: calc(100vw - 300px);
       padding: 35px 40px;
+      overflow: scroll;
       &__log {
         margin-bottom: 46px;
          .name-date {
