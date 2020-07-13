@@ -119,22 +119,22 @@
       overflow: scroll;
       &__log {
         margin-bottom: 46px;
-         .name-date {
-           display: flex;
-          .name {
-            font-size: 16px;
-            color: #333333;
+          .name-date {
+            display: flex;
+            .name {
+              font-size: 16px;
+              color: #333333;
+            }
+            .date {
+              color: #999999;
+              font-size: 12px;
+              padding-left: 10px;
+            }
           }
-          .date {
-            color: #999999;
-            font-size: 12px;
-            padding-left: 10px;
-          }
-         }
-        .message {
-          font-size: 14px;
-          color: #434a54;
-        }
+          // .Message__content {
+          //   font-size: 14px;
+          //   color: #434a54;
+          // }
       }  
     }
     &__form {
