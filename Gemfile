@@ -19,7 +19,6 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'listen', '~> 3.2'
   gem 'spring'
-  gem 'devise'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'capybara', '>= 2.15'
   gem 'selenium-webdriver'
@@ -45,3 +44,4 @@ gem 'pry-rails'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'jquery-rails'
+gem 'devise'
